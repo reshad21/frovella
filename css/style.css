@@ -1,0 +1,423 @@
+@font-face{
+	font-family: Avenir_55_Roman;
+	src:url('../fonts/Avenir_55_Roman.ttf');
+}
+@font-face{
+	font-family: arial;
+	src:url('../fonts/arial.ttf');
+}
+@font-face{
+	font-family: arialbd;
+	src:url('../fonts/arialbd.ttf');
+}
+@font-face{
+	font-family: Lato-Bold;
+	src:url('../fonts/Lato-Bold.ttf');
+}
+@font-face{
+	font-family: Lato-Regular;
+	src:url('../fonts/Lato-Regular.ttf');
+}
+@font-face{
+	font-family: KozGoPro-Heavy;
+	src:url('../fonts/KozGoPro-Heavy.otf');
+}
+
+body{
+	font-family: arial;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: arialbd;
+}
+
+/*topber section*/
+.topber-section{position: absolute;top: 0;right: 0;}
+.topber-section ul li{
+	margin-right: 43px;
+	position: relative;
+	padding-top: 33px;
+}
+.topber-section ul li:nth-child(4){
+	margin-right: 23px;
+}
+.topber-section ul li:before{
+	content: "";
+	position: absolute;
+	top: 43px;
+	left: 15px;
+	width: 44px;
+	height: 2px;
+	background-color: #c5c5c5;
+}
+.topber-section ul li:nth-child(4):before{
+	display: none;
+}
+.topber-section ul{
+	position: relative;
+}
+.topber-section .tpber-top{
+	position: absolute;
+	top: 9px;
+	right: 30px;
+	width: 100%;
+	text-align: right;
+}
+.topber-section ul li i{
+	color: #fadf00;
+}
+.topber-section ul li i:first-child{
+	/*! color: gold; */
+}
+.topber-section .tpber-top img{
+	width: 30px
+}
+.topber-section .tpber-top span{
+	font-size: 11px;
+}
+/*header top section*/
+.frov-header-left{
+	display: flex;
+	gap: 10px;
+}
+.frov-header-left span{
+	color: #797A89;
+}
+.frov-header-right ul li{
+	margin-right: 10px;
+}
+.frov-header-right ul li:nth-child(4) {
+	border-right: 2px solid #838383;
+	padding-right: 10px;
+}
+.frov-header-right ul li:nth-child(2),.frov-header-right ul li:nth-child(4){
+	color:#7D7D7D;
+}
+.frov-header-right ul li:nth-child(1),.frov-header-right ul li:nth-child(3),
+.frov-header-right ul li:nth-child(5),.frov-header-right ul li:nth-child(6){}
+
+
+/*navber seciton*/
+.nav-ber-bg{
+	background: #870D4D;
+	padding: 5px 0;
+}
+.toggle-bar a{
+	color: #fff;
+}
+.frov-navber{
+	color: #fff;
+}
+.frov-navber ul{
+	gap: 56px;
+}
+.frov-navber ul li a{
+	color: #fff;
+	display: inline-block;
+	padding-left: 5px;
+}
+.frov-navber ul li{
+	position: relative;
+}
+.frov-navber ul li:before{
+	position: absolute;
+	content: "";
+	width: 0.1rem;
+	height: 1.7rem;
+	top: 0px;
+	left: -30px;
+	background: #fff;
+}
+.frov-navber ul li:first-child:before{
+	display: none;
+}
+.frov-navber ul li .serach-option{
+	text-align: right;
+	position: relative;
+	margin-right: 10px;
+}
+.frov-navber ul li .serach-option img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 2px 4px;
+}
+.frov-navber ul li .serach-option input{width: 100%;}
+
+/*slider section*/
+.side_bar{
+	width: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	overflow-x: hidden;
+	z-index: 99999999;
+	background-color: tomato;
+	transition: all 0.4s ease;
+}
+.sidebar-top a{
+	font-size: 40px;
+	color: #fff;
+}
+.side_bar-serach{
+	position: relative;
+}
+.side_bar-serach img{
+	position: absolute;
+	top: 2px;
+	left: 149px;
+}
+.side_bar ul.sidebar-option li{margin-bottom: 20px;}
+.side_bar ul.sidebar-option li a{padding-left: 6px;color: #fff;font-weight: 600;}
+
+/*slider section*/
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-clip: padding-box;
+	border: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: .5;
+	transition: opacity .6s ease;
+	border-radius: 50%;
+	background-color: #ddd;
+}
+.carousel .carousel-indicators [data-bs-target].active {
+	background-color:  red !important;
+}
+
+/*trending now section*/
+.frow-trend-sec{
+	padding-bottom: 20px;
+}
+.card {
+	border: none;
+}
+.card-ftr{
+	gap: 5px;
+}
+.crd-ftr-lft {
+	width: 50%;
+	padding: 0 15px;
+	background: gold;
+	border-radius: 4px;
+}
+.crd-ftr-rgt{
+	width: 50%;
+}
+.crd-ftr-lft span:not(:nth-child(2n)){
+	cursor: pointer;
+}
+.frow-trend-sec-bg{
+	background:url("../img/trend-now-sec-bg.png");
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+}
+.pt-botm{
+	padding-bottom: 66px;
+}
+.trending-card .card-body {
+	flex: 1 1 auto;
+	padding: 1rem 0.9rem;
+}
+.trending-card .card-body h5{
+	font-size: 14px;
+	font-weight: 600;
+}
+.trending-card .card-body small.country{
+	color: #a6a6a6;
+}
+.card-ftr .crd-ftr-rgt img{
+	height: 24px;
+	cursor: pointer;
+}
+
+.form-select:focus {
+    border: 1px solid #fff !important
+    box-shadow: 0 0 0 .25rem #fff !important;
+    outline: none !important;
+    box-shadow: none !important
+}
+.form-select {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 16px 12px;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*Combos & Gift Boxes section*/
+.frov-comb-gft-bg{
+	background: url("../img/Gift _ Combo - bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.combo-gift-card .card-body {
+	flex: 1 1 auto;
+	padding: 1rem 1rem;
+}
+.combo-gift-card .card-body h5{
+	font-size: 15px;
+	font-weight: 600;
+}
+.combo-gift-card .card-body small.country{
+	color: #a6a6a6;
+	font-size: 13px;
+	font-weight: bold;
+	word-spacing: -3px;
+}
+.card-ftr .crd-ftr-rgt img{
+	height: 24px;
+	cursor: pointer;
+}
+.combo-gift-card .Pack{
+	padding: 0 30px;
+}
+.combo-gift-card .Pack small{
+	font-size: 20px;
+	margin-left: 39px;
+	color: #aeaeae;
+}
+.frov-com-gft-item{
+	gap: 20px;
+	display: flex;
+}
+.combo-gift-card .card-body .card-ftr .crd-ftr-rgt img{
+	height: 25px;
+}
+
+/*shop collection section*/
+.frow-sp-cl-top{
+	display: flex;
+	justify-content: space-between;
+}
+.frow-sp-cl-btm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 67px;
+}
+
+/*cutomer-review-section carousol*/
+.frov-cusr-bg{
+	background: url("../img/customer review -BG.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.frov-cusr-wraper{
+	padding:10px 0 60px 0;
+}
+.cutomer-review .card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 41px;
+	border-top: 1px solid #000;
+	padding-bottom: 30px;
+	width: 20rem;
+}
+.cutomer-review .card img.card-img-top{
+	width: 150px;
+	height: 150px;
+}
+.cutomer-review .card p{
+	font-size: 18px;
+	padding-top: 18px;
+	margin-bottom: 6px;
+	line-height: 26px;
+	color: #505050;
+	font-family: KozGoPro-Heavy;
+	font-style: italic;
+}
+.cutomer-review .card span{
+	font-size: 21px;
+	font-weight: bold;
+}
+.cutomer-review .card .customer-rating{
+	display: flex;
+}
+
+/*popular search tag*/
+.frov-src-wraper h5{
+	font-weight: bold;
+}
+.frov-src-wraper p{
+	text-align: justify;
+	font-size: 13px;
+	font-weight: bold;
+	word-spacing: 2px;
+}
+
+/*footer section*/
+.footer-bg{
+	background: url('../img/footer - bg.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 30px 0 160px 0;
+}
+.footer-widget h5{
+	font-weight: bold;
+	font-size: 16px;
+}
+.footer-widget ul li small{font-weight: 500;color: #191919;font-size: 15px;}
+.footer-last-widget ul{
+	justify-content: space-between;
+}
+
+
+
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -2rem;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: -2rem;
+}
+
+
+
+
+.trendingCarousel .trending-card{
+	width: 200px;
+}
+.stratCart .trending-card{
+	width: 200px;
+}
